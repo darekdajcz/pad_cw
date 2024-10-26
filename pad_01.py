@@ -67,8 +67,8 @@ def cosine_similarity(vec1, vec2):
     return dot_product / (norm_vec1 * norm_vec2)
 
 
-num_cols_A = matrixA.shape[1]
-num_cols_B = matrixB.shape[1]
+num_cols_A = matrixA.shape[0]
+num_cols_B = matrixB.shape[0]
 
 print(num_cols_A)
 print(num_cols_B)
@@ -80,10 +80,6 @@ print(range(num_cols_B))
 
 for i in range(num_cols_A):
     for j in range(num_cols_B):
-        print('A i:', i)
-        print('B i:', j)
-        print(matrixA[:, i])
-        print(matrixB[:, j])
         similarity_matrix[i, j] = cosine_similarity(matrixA[i, :], matrixB[j, :])
 
 print("Macierz podobieństwa:")
