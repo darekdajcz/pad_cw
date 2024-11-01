@@ -38,7 +38,6 @@ print('mean noNan', mean)
 print('median noNan', median)
 print('var noNan', variance)
 
-
 # zad 2
 data = pd.read_csv('/Users/darekdajcz/Desktop/Magisterka Studia PJATK/PAD/PAD_01/Zadanie_2.csv', sep=';', header=None)
 matrix = data.to_numpy()
